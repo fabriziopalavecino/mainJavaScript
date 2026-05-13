@@ -1,0 +1,5 @@
+[
+  { "zona": "CABA", "precio": 3000 },
+  { "zona": "Buenos Aires", "precio": 7000 },
+  { "zona": "Interior", "precio": 15000 }
+]

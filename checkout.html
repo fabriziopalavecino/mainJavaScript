@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | PurinaDog ProMax</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/checkout.js"></script>
+</head>
+
+<body>
+  
+  <header id="indexHeader">
+    <div class="topHeader">
+      <h1 class="purina">PurinaDog<span class="max">ProMax</span></h1>
+      <div class="linksHeader">
+        <a href="/index.html">inicio</a> 
+      </div>
+    </div>
+    <section>
+      Sabores Premium
+    </section>
+    <div class="fondoPerro">
+      <h2 class="eslogan">Una forma distinta de alimentar a tu mascota</h2>
+    </div>
+  </header>
+
+  <main class="indexMain">
+    <div class="entregaMenu">
+      <h2>Finalizar compra</h2>
+
+      <div id="resumenCarrito"></div>
+      <h3>Total a pagar: $<span id="totalFinal"></span></h3>
+
+      <div class="formulario">
+        <div class="campo">
+          <label>Nombre en tarjeta</label>
+          <input type="text" id="titular">
+        </div>
+
+        <div class="campo">
+          <label>Número</label>
+          <input type="number" id="numero">
+        </div>
+
+        <div class="campo">
+          <label>Vencimiento</label>
+          <input type="text" placeholder="MM/AA" id="vencimiento">
+        </div>
+
+        <div class="campo">
+          <label>CVV</label>
+          <input type="number" id="cvv">
+        </div>
+
+        <button class="botonPagar">Pagar</button>
+        
+        <button class="botonVolver">Atrás</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

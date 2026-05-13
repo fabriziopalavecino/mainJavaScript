@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurinaDog Promax | Lo mejor para tu mejor amigo</title>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="indexHeader">
+        <div class="topHeader">
+            <h1 class="purina">PurinaDog<span class="max">ProMax</span></h1>
+            <div class="linksHeader">
+                <a href="#indexHeader">inicio</a>
+                <a href="#productos">¡nuevo!</a>
+                <a href="#datosEnvio">Encargá</a>
+                <a href="#masInfo">nosotros </a>
+            </div>
+        </div>
+        <section>
+            Sabores Premium
+        </section>
+        <div class="fondoPerro">
+            <h2 class="eslogan">Una forma distinta de alimentar a tu mascota</h2>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main class="indexMain" id="indeX">
+        <h2 class="nuevosProductos" id="productos">¡Nuevos productos!</h2>
+        <section class="productos">
+
+            <article class="producto">
+                <img src="productoPyC.png" alt="Imagen de producto 1">
+                <p>Texto del producto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim. Ad, hic
+                    laudantium, nulla magnam atque nesciunt nostrum perferendis aspernatur debitis molestiae fugiat,
+                    expedita consequatur fugit at voluptatem nihil molestias eligendi voluptatum dolores eum dolorem.
+                    Earum vitae optio at aspernatur molestias itaque molestiae cupiditate, soluta, quia quos illo nam
+                    amet deserunt commodi, reiciendis excepturi dolorum. Necessitatibus obcaecati iste suscipit?
+                    Inventore aliquid sed quasi odio voluptatum reiciendis, nihil est asperiores, repellendus odit
+                    assumenda et voluptas. Ad, optio quae. Laudantium et officia fugiat mollitia! Fuga ea sint cum
+                    debitis eius, soluta odio dolorem laudantium alias consectetur ab maiores? Soluta voluptatibus
+                    assumenda aut!
+            </article>
+
+            <article class="producto reverse">
+                <img src="productoCordero.png" alt="Imagen de producto 2">
+                <p>Texto del producto 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eaque reiciendis
+                    excepturi hic quos. Officiis, quam commodi ullam suscipit maiores architecto dolore mollitia
+                    accusantium neque fugit magni voluptatum officia nihil molestias at ex laborum illum. Unde sequi
+                    ipsa voluptatibus omnis cumque nam, atque fugiat vitae autem sapiente voluptas numquam consequuntur
+                    harum velit, ducimus, eius asperiores molestiae temporibus doloremque modi quos repudiandae ratione
+                    veritatis? Doloribus, architecto quas fugiat harum corrupti neque unde dolorem fugit voluptate
+                    delectus? Ab nisi eveniet delectus sunt quibusdam atque ex dolorem sint, culpa natus sit hic
+                    expedita tempora voluptates quis fuga eos saepe pariatur enim minima. Amet!</p>
+            </article>
+
+        </section>
+
+        <section id="datosEnvio">
+            <div class="entregaMenu">
+                <h2>Llene los datos para presupuesto</h2>
+                <h4>Precio unitario:
+                    <ul>
+                        <li>bolsa chica: $6000</li>
+                        <li>bolsa mediana: $12000</li>
+                        <li>bolsa grande: $18000</li>
+                        <li>envío a: CABA: $3000 - Buenos Aires: $7000 - Interior del pais: $15000</li>
+                    </ul>
+                </h4>
+
+                <div class="formulario">
+                    <div class="campo">
+                        <label>Mail</label>
+                        <input type="email" id="mail" placeholder="example@gmail.com...">
+
+                    </div>
+
+                    <div class="campo">
+                        <label>Apellido y Nombre</label>
+                        <input type="text" id="nombre" placeholder="Escribe aquí...">
+                    </div>
+
+                    <div class="campo">
+                        <label>bolsas chicas</label>
+                        <input type="number" id="chicas" placeholder="0">
+                    </div>
+
+                    <div class="campo">
+                        <label>bolsas medianas</label>
+                        <input type="number" id="medianas" placeholder="0">
+                    </div>
+
+
+                    <div class="campo">
+                        <label>bolsas grandes</label>
+                        <input type="number" id="grandes" placeholder="0">
+                    </div>
+
+                    <div class="campo">
+                        <label for="opciones">Selecciona una opción:</label>
+                        <select name="opciones" id="opciones">
+                            <option value="1">CABA</option>
+                            <option value="2">Buenos Aires</option>
+                            <option value="3">Interior del pais</option>
+                        </select>
+
+                    </div>
+
+                    <button type="button" class="boton">Agregar al carrito</button>
+                    <button type="button" class="botonContinuar">Continuar a la compra</button>
+
+                    <p id="resultado"></p> <p id="correo"></p>
+                    <div id="historial"></div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="indexFooter" id="masInfo">
+        <article>
+            <nav>
+                <h3 class="masInfo">Mas informacíon:</h3>
+                <ul class="enlaces">
+                    <li>
+                        <h4><a target="_blank" href="link">Twitter</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">Instagram</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">avisos legales</a></h4>
+                    </li>
+                    <li>
+                        <h4><a target="_blank" href="link">Contactos</a></h4>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </footer>
+</body>
+</html>

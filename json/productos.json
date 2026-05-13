@@ -1,0 +1,5 @@
+[
+  { "tipo": "chica", "precio": 6000 },
+  { "tipo": "mediana", "precio": 12000 },
+  { "tipo": "grande", "precio": 18000 }
+]

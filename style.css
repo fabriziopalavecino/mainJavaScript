@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.purina {
+  color: #000;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.max {
+  color: darkgoldenrod;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: burlywood;
+  border-bottom: solid black;
+  font-size: clamp(0.5vh, 4vw, 1rem);
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+}
+
+.topHeader h1 {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.linksHeader {
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topHeader a {
+  color: darkgoldenrod;
+  padding: 0.5rem;
+}
+
+a:hover {
+  background-color: rgb(146, 95, 27);
+  color: #fff;
+}
+
+#indexHeader section {
+  border: solid;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: rgba(250 150 20 / 0.2);
+  text-align: center;
+}
+
+.fondoPerro {
+  border-style: solid;
+  border-color: black;
+  background-image: url("./indexBackgroundImage.avif");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  /* horizontal */
+  align-items: center;
+  /* vertical */
+}
+
+#indexHeader h2 {
+  text-align: center;
+  color: #ffffff8f;
+  padding: 1vh;
+  border-style: dashed;
+  border-color: #ffffff8f;
+  border-radius: 2rem;
+  min-width: 50%;
+  font-size: clamp(0.5rem, 2vw, 2rem)
+}
+
+/* Main */
+.indexMain {
+  background-color: rgba(250 150 20 / 0.2);
+  padding: 2rem 0;
+}
+
+.indexMain article {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: burlywood;
+}
+
+.nuevosProductos {
+  text-decoration: underline;
+  text-align: center;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem
+}
+
+.producto {
+  border-style: solid;
+  border-color: #000;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.producto.reverse {
+  border-style: solid;
+  border-color: #000;
+  margin: 1rem;
+  flex-direction: row-reverse;
+}
+
+.producto img {
+  border-style: solid;
+  border-color: #000;
+  width: 100%;
+  max-width: 30rem;
+  height: 100%;
+}
+
+.producto p {
+  flex: 1;
+}
+
+.indexMain h2 {
+  text-decoration: underline;
+}
+
+.entregaMenu {
+  background-color: burlywood;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-height: 20vh;
+  gap: 3rem;
+  padding: 2rem;
+  margin: auto;
+  text-transform: uppercase;
+  border-style: solid;
+  border-color: #000;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.campo label {
+  width: 120px; /* clave para alinear */
+  text-align: right;
+}
+
+.campo input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.boton {
+  background-color: gray;
+  text-transform: uppercase;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.botonContinuar {
+  background-color: darkgreen;
+  color: white;
+  text-transform: uppercase;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.eliminar {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.indexFooter {
+  background-color: rgb(146, 95, 27);
+  border-style: solid;
+  border-color: rgb(0 0 0);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  font-size: clamp(0.5rem, 4vw, 1rem);
+}
+
+.indexFooter article {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem 2rem 2rem;
+}
+
+.masInfo {
+  padding-bottom: 1rem;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: burlywood;
+  border-radius: 1rem;
+  min-width: 15%;
+  list-style-type: none;
+}
+
+#título h1 {
+  color: rgb(rgb(200 250 20));
+}
+
+.presupuestoHecho {
+  background-color: burlywood;
+  border-radius: 1rem;
+  width: 70%;
+  height: 2rem;
+}
+
+/* Dispositivos */
+@media only screen and (max-width: 900px) {
+  .topHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    padding: 0.5rem;
+    background-color: burlywood;
+    border-bottom: solid black;
+    font-size: clamp(0.2vh, 4vw, 1rem);
+    height: auto;
+  }
+
+  .linksHeader {
+    min-width: none; font-size: clamp(0.2rem, 0.7rem, 1rem);
+    padding: 1rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .beneficios ul {
+    font-size: 0.7rem;
+  }
+}
+
+/*checkout*/
+.botonPagar {
+  background-color: darkgreen;
+  color: white;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.botonVolver {
+  background-color: gray;
+  color: white;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
