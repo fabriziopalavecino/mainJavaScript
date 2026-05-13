@@ -215,5 +215,3 @@ function mostrarResultado(total) {
 
 //checkout
 renderCarrito();
-
-#dabcde
