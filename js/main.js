@@ -216,3 +216,4 @@ function mostrarResultado(total) {
 //checkout
 renderCarrito();
 
+#d
