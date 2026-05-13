@@ -216,4 +216,4 @@ function mostrarResultado(total) {
 //checkout
 renderCarrito();
 
-#dab
+#dabc
